@@ -31,11 +31,12 @@ export function LoginPage() {
     <div className="auth-shell">
       <div className="auth-card animate fadeInUp">
         <h2>Admin Login</h2>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} autoComplete="off">
           <label>
             Email
             <input
               type="email"
+              autoComplete="off"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               required
@@ -45,6 +46,7 @@ export function LoginPage() {
             Password
             <input
               type="password"
+              autoComplete="off"
               value={password}
               onChange={(event) => setPassword(event.target.value)}
               required
