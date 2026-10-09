@@ -40,6 +40,7 @@ export function AboutPage() {
                     Our team of dedicated professionals is committed to providing an unforgettable spa experience that leaves you feeling refreshed and revitalized. Escape the hustle and bustle of daily life and step into a haven of relaxation.
                   </p>
                   <a className="btn btn-theme btn-md animation" href="tel:+919845280400">+91 98452 80400</a>
+                  <a className="btn btn-theme btn-md animation" href="tel:+918431803560">+91 84318 03560</a>
                 </div>
               </div>
             </div>
