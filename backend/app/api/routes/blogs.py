@@ -47,6 +47,18 @@ def list_published_blogs(db: Session = Depends(get_db)):
     )
 
 
+# --- Admin Endpoints (Require Admin JWT) ---
+# NOTE: These MUST be registered before /{identifier} to avoid wildcard shadowing.
+
+@router.get('/admin/all', response_model=list[BlogPostOut])
+def list_all_blogs_for_admin(
+    db: Session = Depends(get_db),
+    _admin: User = Depends(get_current_admin_user),
+):
+    """Admin view: returns all articles (drafts and published)."""
+    return db.query(BlogPost).order_by(BlogPost.created_at.desc()).all()
+
+
 @router.get('/{identifier}', response_model=BlogPostOut)
 def get_published_blog(identifier: str, db: Session = Depends(get_db)):
     """Return a single published blog post by numeric ID or URL slug."""
@@ -62,17 +74,6 @@ def get_published_blog(identifier: str, db: Session = Depends(get_db)):
             detail='Blog post not found',
         )
     return post
-
-
-# --- Admin Endpoints (Require Admin JWT) ---
-
-@router.get('/admin/all', response_model=list[BlogPostOut])
-def list_all_blogs_for_admin(
-    db: Session = Depends(get_db),
-    _admin: User = Depends(get_current_admin_user),
-):
-    """Admin view: returns all articles (drafts and published)."""
-    return db.query(BlogPost).order_by(BlogPost.created_at.desc()).all()
 
 
 @router.post('', response_model=BlogPostOut, status_code=status.HTTP_201_CREATED)

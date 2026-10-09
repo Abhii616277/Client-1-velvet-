@@ -1,4 +1,5 @@
 import re
+from datetime import datetime
 from typing import Annotated
 
 from pydantic import BaseModel, EmailStr, StringConstraints, field_validator
@@ -23,7 +24,10 @@ class ContactOut(BaseModel):
     id: int
     name: str
     email: str
+    phone: str
     subject: str
+    message: str
     is_read: bool
+    created_at: datetime
 
     model_config = {'from_attributes': True}

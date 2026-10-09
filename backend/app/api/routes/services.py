@@ -47,7 +47,7 @@ def update_service(
     if not service:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail='Service not found')
 
-    for key, value in payload.model_dump().items():
+    for key, value in payload.model_dump(exclude_unset=True).items():
         setattr(service, key, value)
 
     db.commit()

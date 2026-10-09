@@ -106,8 +106,6 @@ def seed_default_data():
             else:
                 db.add(Service(**service_data))
                 service_catalog_changed = True
-        if service_catalog_changed:
-            db.commit()
 
         user = db.query(User).filter(User.email == settings.admin_email).first()
         if user:
@@ -115,7 +113,6 @@ def seed_default_data():
                 user.password_hash = hash_password(settings.admin_password)
                 user.name = user.name or 'Admin User'
                 user.role = 'admin'
-                db.commit()
         else:
             db.add(
                 User(
@@ -125,7 +122,12 @@ def seed_default_data():
                     role='admin',
                 )
             )
+
+        if service_catalog_changed or True:
             db.commit()
+    except Exception:
+        db.rollback()
+        raise
     finally:
         db.close()
 

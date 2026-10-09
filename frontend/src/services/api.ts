@@ -91,7 +91,7 @@ export const getDashboardStats = async () => {
 };
 
 export const getAdminBookings = async () => {
-  const response = await api.get('/admin/bookings');
+  const response = await api.get('/bookings/admin');
   return response.data;
 };
 

@@ -9,6 +9,7 @@ from app.models.booking import Booking
 from app.models.contact import ContactMessage
 from app.models.user import User
 from app.schemas.admin import DashboardStats, StatusUpdate
+from app.schemas.booking import BookingOut
 
 router = APIRouter()
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl='/api/v1/auth/login')
@@ -49,7 +50,7 @@ def get_dashboard_stats(
     }
 
 
-@router.get('/bookings')
+@router.get('/bookings', response_model=list[BookingOut])
 def list_bookings(
     db: Session = Depends(get_db),
     _admin: User = Depends(get_current_admin_user),

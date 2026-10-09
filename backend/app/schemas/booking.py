@@ -30,8 +30,16 @@ class BookingCreate(BaseModel):
         return value
 
 
-class BookingOut(BookingCreate):
+class BookingOut(BaseModel):
     id: int
+    customer_name: str
+    phone: str
+    email: str
+    service_id: int
+    booking_date: date
+    booking_time: time
+    address: str
+    notes: str | None = None
     status: str
     created_at: datetime
 
