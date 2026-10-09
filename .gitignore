@@ -1,0 +1,49 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Python virtual environments
+.venv/
+.venv*/
+venv/
+env/
+
+# Node.js
+node_modules/
+
+# Frontend build output
+dist/
+build/
+
+# Local databases and database backups
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.dump
+
+# Logs
+*.log
+logs/
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets and service-account files
+serviceAccountKey.json
+secrets/
