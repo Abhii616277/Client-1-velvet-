@@ -230,7 +230,7 @@ export function HomePage() {
           <div className="google-map" style={{ overflow: 'hidden', boxShadow: '0 -10px 30px rgba(0, 0, 0, 0.08)' }}>
             <iframe
               title="Velvet Touch Spa Location"
-              src="https://www.google.com/maps?q=Shop%20no%2018%20old%20no.%20278,%20200%20feet%20road,%20Jayanagar,%20Bengaluru,%20Karnataka%20560011&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15554.745941645428!2d77.57882495937858!3d12.92786066202655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15ba60ae85a5%3A0x79ba3861596b8700!2sNifit%20Spa%20Home%20Massage%20Service!5e0!3m2!1sen!2sus!4v1791627632237!5m2!1sen!2sus"
               width="100%"
               height="420"
               loading="lazy"
