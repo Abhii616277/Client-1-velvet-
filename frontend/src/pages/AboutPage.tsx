@@ -39,8 +39,8 @@ export function AboutPage() {
                   <p>
                     Our team of dedicated professionals is committed to providing an unforgettable spa experience that leaves you feeling refreshed and revitalized. Escape the hustle and bustle of daily life and step into a haven of relaxation.
                   </p>
-                  <a className="btn btn-theme btn-md animation" href="tel:+919845280400">+91 98452 80400</a>
-                  <a className="btn btn-theme btn-md animation" href="tel:+918431803560">+91 84318 03560</a>
+                  <a className="btn btn-theme btn-md animation" href="tel:+916362371506">+91 6362371506</a>
+                  <a className="btn btn-theme btn-md animation" href="tel:+916362371506">+91 6362371506</a>
                 </div>
               </div>
             </div>
@@ -62,7 +62,7 @@ export function AboutPage() {
                 <p>
                   Hotel & Home Massage Services: Indulge in a variety of massage treatments tailored to meet your unique needs. From relaxing massages to invigorating facials, we offer a comprehensive range of services to cater to your well-being.
                 </p>
-                <a className="btn btn-theme btn-md animation mt-10" href="tel:+919845280400">+91 98452 80400</a>
+                <a className="btn btn-theme btn-md animation mt-10" href="tel:+916362371506">+91 6362371506</a>
               </div>
             </div>
           </div>

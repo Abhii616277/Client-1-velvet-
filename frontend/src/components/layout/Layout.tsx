@@ -12,12 +12,12 @@ export function Layout() {
       </main>
 
       <div className="floating-contact">
-        <a className="floating-icon call" href="tel:+919845280400" aria-label="Call Velvet Touch Spa">
+        <a className="floating-icon call" href="tel:+916362371506" aria-label="Call Velvet Touch Spa">
           <PhoneCall size={22} />
         </a>
         <a
           className="floating-icon whatsapp"
-          href="https://api.whatsapp.com/send/?phone=919845280400&text=Hi+Velvet+Touch+Spa%2C+I+want+to+book+a+massage+appointment.&type=phone_number&app_absent=0"
+          href="https://api.whatsapp.com/send/?phone=916362371506&text=Hi+Velvet+Touch+Spa%2C+I+want+to+book+a+massage+appointment.&type=phone_number&app_absent=0"
           target="_blank"
           rel="noreferrer"
           aria-label="WhatsApp Velvet Touch Spa"

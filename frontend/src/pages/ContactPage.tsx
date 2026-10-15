@@ -72,7 +72,7 @@ export function ContactPage() {
                     </div>
                     <div className="content">
                       <h5 className="title">Call Now</h5>
-                      <a href="tel:+919845280400">+91 98452 80400</a>
+                      <a href="tel:+916362371506">+91 6362371506</a>
                     </div>
                   </li>
                   <li>

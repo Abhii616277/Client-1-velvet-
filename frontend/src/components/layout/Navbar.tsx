@@ -17,9 +17,9 @@ export function Navbar() {
               </div>
               <div className="info">
                 <h5>Call for Appointment</h5>
-                <a href="tel:+919845280400">+91 98452 80400</a>
+                <a href="tel:+916362371506">+91 6362371506</a>
                 <br></br>
-                <a href="tel:+918431803560">+91 84318 03560</a>
+                <a href="tel:+916362371506">+91 6362371506</a>
               </div>
             </div>
 
@@ -81,11 +81,11 @@ export function Navbar() {
             <div className="attr-nav attr-box">
               <ul>
                 <li className="side-menu">
-                  <a href="tel:+919845280400">
-                    <i className="fas fa-phone" /> +91 98452 80400
+                  <a href="tel:+916362371506">
+                    <i className="fas fa-phone" /> +91 6362371506
                   </a>
-                  <a href="tel:+918431803560">
-                    <i className="fas fa-phone" />+91 84318 03560
+                  <a href="tel:+916362371506">
+                    <i className="fas fa-phone" />+91 6362371506
 
                   </a>
                 </li>

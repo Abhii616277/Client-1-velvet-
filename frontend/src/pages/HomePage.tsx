@@ -64,7 +64,7 @@ export function HomePage() {
                   <p>
                     Escape the hustle and bustle of daily life, and step into a haven of relaxation where your well-being is our top priority.
                   </p>
-                  <a className="btn btn-theme btn-md animation" href="tel:+919845280400">+91 98452 80400</a>
+                  <a className="btn btn-theme btn-md animation" href="tel:+916362371506">+91 6362371506</a>
                 </div>
               </div>
             </div>
@@ -84,7 +84,7 @@ export function HomePage() {
                   <div className="info">
                     <h3>{card.title}</h3>
                     <p>{card.text}</p>
-                    <a href="tel:+919845280400" className="btn mt-20 circle btn-sm btn-theme effect"> +91 98452 80400</a>
+                    <a href="tel:+916362371506" className="btn mt-20 circle btn-sm btn-theme effect"> +91 6362371506</a>
                   </div>
                 </div>
               </div>
@@ -156,7 +156,7 @@ export function HomePage() {
                     </div>
                     <div className="info">
                       <p>Call Anytime</p>
-                      <h4><a href="tel:+919845280400">+91 98452 80400</a></h4>
+                      <h4><a href="tel:+916362371506">+91 6362371506</a></h4>
                     </div>
                   </div>
                 </div>
