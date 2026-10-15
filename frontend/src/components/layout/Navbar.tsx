@@ -19,7 +19,6 @@ export function Navbar() {
                 <h5>Call for Appointment</h5>
                 <a href="tel:+916362371506">+91 6362371506</a>
                 <br></br>
-                <a href="tel:+916362371506">+91 6362371506</a>
               </div>
             </div>
 
