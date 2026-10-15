@@ -79,15 +79,7 @@ export function Navbar() {
           <div className="attr-right">
             <div className="attr-nav attr-box">
               <ul>
-                <li className="side-menu">
-                  <a href="tel:+916362371506">
-                    <i className="fas fa-phone" /> +91 6362371506
-                  </a>
-                  <a href="tel:+916362371506">
-                    <i className="fas fa-phone" />+91 6362371506
 
-                  </a>
-                </li>
                 <li className="side-menu admin-link-hidden">
                   <Link to="/login" aria-label="Admin login" title="Admin login">
                     <LockKeyhole size={15} />
