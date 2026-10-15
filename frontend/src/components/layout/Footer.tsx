@@ -48,7 +48,6 @@ export function Footer() {
             <ul>
               <li><span>Shop no 18, old no.278, 200 feet road, 11th Main Rd, 2nd Block, Pattabhirama Nagar, Jayanagar, Bengaluru, Karnataka 560011</span></li>
               <li><a href="tel:+916362371506">+91 6362371506</a></li>
-              <li><a href="tel:+916362371506">+91 6362371506</a></li>
             </ul>
           </div>
         </div>
